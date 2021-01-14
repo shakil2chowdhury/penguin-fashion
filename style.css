@@ -1,0 +1,284 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header section */
+header {
+    background-color: #FFFBF0;
+}
+
+.nav_item {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.penguin_logo {
+    width: 250px;
+}
+
+.header_text {
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 40%;
+}
+
+.header_title {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-size: 75px;
+    color: #363958;
+}
+
+.header_title span {
+    color: #FABE4C;
+}
+
+.header_text p {
+    color: #3E3E3E;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header_img {
+    width: 40%;
+    margin-left: 8%;
+}
+
+.header_img img {
+    width: 450px;
+}
+
+
+/* Button Styles */
+.btn_primary {
+    background-image: linear-gradient(180deg, rgba(164, 188, 70), rgb(120, 161, 54));
+    color: #FFFFFF;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.btn_primary:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.btn_secondary {
+    background-image: linear-gradient(60deg, #474961, #8b8da5);
+    color: #FFFFFF;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.btn_secondary:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
+
+.btn_primary img {
+    padding-right: 2px;
+    width: 25px;
+}
+
+/* Product Display Section */
+
+.section_title {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #363958;
+}
+
+.card_full {
+    border-radius: 2.25rem;
+    padding: 5%;
+    border: 1px solid rgb(241, 241, 241);
+    box-shadow: 1px 1px 5px 5px rgb(248, 248, 248);
+    transition: 0.3s ease-in-out;
+}
+
+.card_full:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+.card_img {
+    width: 100%;
+    height: 28vw;
+    border-radius: 15%;
+}
+
+.card {
+    padding: 5%;
+}
+
+.card_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #363958;
+}
+
+.card_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #3E3E3E;
+}
+
+.buy_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy_price {
+    color: #FABE4C;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* App Section */
+.app_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    margin-right: 0%;
+    padding: 5%;
+}
+
+.app_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgb(228, 228, 228);
+    margin-top: 5%;
+    padding: 5% 2% 2% 5%;
+    transition: 0.5s ease-in-out;
+}
+
+.app_item:hover {
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.app_content {
+    margin-left: 5%;
+}
+
+.app_item-img {
+    width: 75px;
+    height: 75px;
+}
+
+.img_app {
+    width: 100%;
+}
+
+
+
+
+/* Footer */
+
+.subscribe {
+    background-image: linear-gradient(60deg, #FFFBF0, #f0d1a2);
+}
+
+.input_subscribe {
+    text-align: -webkit-center;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    .header_text {
+        width: 100%;
+    }
+
+    .header_img img {
+        width: 25rem;
+        padding-top: 2rem;
+    }
+
+    .header_title {
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .header_img img {
+        width: 20rem;
+        padding-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .card_full {
+        width: 100%;
+    }
+
+    .card_img {
+        width: 100%;
+        height: auto;
+        border-radius: 15%;
+    }
+
+}
+
+
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .buy_section h2 {
+        font-size: 1.5em;
+    }
+
+    .buy_section .btn_primary {
+        padding: 2% 5%;
+        border-radius: 5px;
+        border: none;
+        font-size: .4em;
+    }
+}
+
+@media (max-width: 992px) {
+    .app_section {
+        flex-direction: column;
+    }
+
+    .app_item {
+        width: 90%;
+        align-items: center;
+    }
+
+    .img_app {
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+}
